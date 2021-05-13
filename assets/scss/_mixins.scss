@@ -1,0 +1,39 @@
+@import '~/assets/scss/_variables.scss';
+
+$smallToggleSize: 30px;
+@mixin smallToggle {
+  font-size: 30px;
+  background-color: #2F363D;
+  border: none;
+  border-radius: 50%;
+  color: $gold;
+  width: $smallToggleSize;
+  height: $smallToggleSize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  svg {
+    width: 15px;
+  }
+}
+
+@mixin boxHighlight {
+  color: var(--font-color);
+  border: 1px solid var(--accent-color);
+  box-shadow: 6px 6px 0 -1px var(--accent-color);
+}
+
+@mixin page {
+  flex: 1;
+  width: 100%;
+  margin: 20px auto 40px;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@nuxtjs/fontawesome": "^1.1.2",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "core-js": "^3.9.1",
+    "events": "^3.3.0",
+    "gsap": "^3.6.1",
+    "nuxt": "^2.15.3",
+    "three": "^0.128.0"
+  },
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "node-sass": "^6.0.0",
+    "sass": "^1.32.13",
+    "sass-loader": "^10.2.0"
+  }
+}
