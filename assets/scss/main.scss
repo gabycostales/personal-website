@@ -29,6 +29,13 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   background-color: var(--accent-color);
+
+  &.light-mode {
+    .light-mode-bg {
+      border-radius: 5px;
+      background-color: $lightgray;
+    }
+  }
 }
 
 body {

@@ -1,18 +1,20 @@
 <template>
   <div class="fun-page">
-    <section class="content">
+    <section class="content light-mode-bg">
       <p>
         When I’m not <a @click.prevent="changeMesh('cubeMesh')">coding</a>, I’m probably hanging out my dog, playing <a @click.prevent="changeMesh('d20Mesh')">D&D</a> with my friends , or drinking an IPA at a brewery 🍻.  
       </p>
       <p>
-        Here’s a sample of my <a target="_blank" href="https://open.spotify.com/playlist/7tTmN5OZ372xOoi5vZeUWl?si=045823b437ae46ca">music</a> taste 👩🏼‍🎤, judge away.
+        Here’s a sample of my <a target="_blank" href="https://open.spotify.com/playlist/7tTmN5OZ372xOoi5vZeUWl?si=045823b437ae46ca">music</a> taste 👩🏼‍🎤.
       </p>
       <p>
         My all time favorite video games are: The Last of Us (Part 1 & 2), Legend of Zelda: The Wind Waker, Fallout 3, Gone Home, and this incredibly strange game that I had to do a project on in college narrated by Leonard Nemoy called <a target="_blank" href="https://en.wikipedia.org/wiki/Seaman_(video_game)">Seaman</a> 🤷🏻‍♀️.
       </p>
     </section>
     <section class="fun-canvas">
-      <LazyThreeCanvas />
+      <client-only>
+        <LazyThreeCanvas />
+      </client-only>
       <span class="caption">
         I'm also just starting to learn Three.js! Click on the links in my bio to see different meshes.
       </span>
@@ -39,9 +41,13 @@ export default {
     justify-content: space-between;
 
     .content {
+      padding: 20px;
+      margin: -20px;
       width: 50%;
 
       p {
+        font-size: 25px;
+        line-height: 1.5em;
         margin: 20px 0;
 
         &:first-child { margin-top: 0; }

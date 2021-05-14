@@ -2,6 +2,7 @@
   <header>
     <HeaderLogo />
     <div class="theme-toggles">
+      <NuxtLink to="/cv" class="page-link">cv</NuxtLink>
       <NuxtLink to="/fun" class="page-link">fun</NuxtLink>
       <HeaderThemeColorSwap />
       <HeaderColorModeToggle />

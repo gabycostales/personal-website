@@ -2,6 +2,7 @@
   <div class="index-page">
     <section class="title">
       <h1 class="name">
+        <!-- eslint-disable-next-line vue/no-parsing-error -->
         <span>< </span> gaby carmen costales <span> ></span>
       </h1>
       <span class="subtitle">yup, my initials are a compiler</span>
@@ -17,16 +18,11 @@
         I currently work for <a target="_blank" href="https://myresman.com/">ResMan</a>.
       </p>
       <p class="cta">
-        I plan to add more to this site soon, but in the meantime check out my CV and some other fun stuff.
+        I plan to add more to this site soon, but in the meantime check out my CV and some other <NuxtLink to="/fun">fun</NuxtLink> stuff.
       </p>
     </section>
   </div>
 </template>
-
-<script>
-export default {
-}
-</script>
 
 <style lang="scss" scoped>
 
