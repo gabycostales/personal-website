@@ -49,8 +49,7 @@ export default {
           endDate: 'Present',
           about: [
             'Building automation to convert pre-existing websites into fully functional responsive web apps',
-            'Using MeteorJS, Vue.js and Node.js frameworks to add new features to both existing and new products',
-            'Working with a team of developers in an Agile environment',
+            'Working with a team of developers in an Agile environment to add new features to both existing and new products using Meteor/Vue.js/Node'
           ],
           skills: ['JavaScript', 'Mongo', 'Meteor.js', 'Vue.js', 'JIRA']
         },
@@ -125,7 +124,6 @@ export default {
   },
 };
 </script>
-
 
 <style lang="scss" scoped>
 
