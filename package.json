@@ -21,6 +21,7 @@
     "three": "^0.128.0"
   },
   "devDependencies": {
+    "@nuxtjs/vercel-builder": "^0.21.2",
     "fibers": "^5.0.0",
     "node-sass": "^6.0.0",
     "sass": "^1.32.13",
