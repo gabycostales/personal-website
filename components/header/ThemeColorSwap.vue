@@ -2,6 +2,7 @@
   <button 
     class="theme-color-button"
     title="Change Theme Accent Color"
+    :class="{'light-mode': isLightMode}"
     @click="changeAccentColor"
   >
     <font-awesome-icon
@@ -16,6 +17,7 @@
 export default {
   data() {
     return {
+      isLightMode: false,
       currentColorIndex: 0,
       themeColors: [
         '#679cdf', // blue
@@ -24,6 +26,11 @@ export default {
         '#ed64a6', // pink
       ],
     }
+  },
+  mounted() {
+    this.$events.on('toggledColorMode', (isLightMode) => {
+      this.isLightMode = isLightMode;
+    });
   },
   methods: {
     changeAccentColor() {
@@ -50,6 +57,10 @@ export default {
   .theme-color-button {
     margin-right: 15px;
     @include smallToggle;
+
+    &.light-mode {
+      background-color: transparent;
+    }
 
     @media (max-width: 310px) {
       margin-right: 10px;

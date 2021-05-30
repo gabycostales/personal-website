@@ -27,6 +27,7 @@ export default {
     toggleColorMode() {
       this.lightMode = !this.lightMode;
       document.documentElement.classList.toggle('light-mode');
+      this.$events.emit('toggledColorMode', this.lightMode);
     }
   }
 }
