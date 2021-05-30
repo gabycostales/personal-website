@@ -2,7 +2,6 @@
 
 $smallToggleSize: 30px;
 @mixin smallToggle {
-  font-size: 30px;
   background-color: #2F363D;
   border: none;
   border-radius: 50%;
@@ -12,6 +11,7 @@ $smallToggleSize: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 
   &:focus {
     outline: none;
