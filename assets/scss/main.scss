@@ -63,6 +63,10 @@ a {
 p {
   font-size: 28px;
   line-height: 1.3em;
+
+  @media (max-width: 700px) {
+    font-size: 5vw;
+  }
 }
 
 // Page Transition: Scale

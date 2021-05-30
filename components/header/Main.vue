@@ -21,6 +21,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+
+    @media (max-width: 500px) {
+      padding: 20px 5px;
+    }
   }
 
   .theme-toggles {
@@ -33,6 +37,10 @@
     margin-right: 15px;
     letter-spacing: 2px;
     font-family: $spaceMonoFamily;
+
+    @media (max-width: 310px) {
+      margin-right: 10px;
+    }
   }
 
 </style>

@@ -1,10 +1,7 @@
 <template>
   <div class="index-page">
-    <section class="title">
-      <h1 class="name">
-        <!-- eslint-disable-next-line vue/no-parsing-error -->
-        <span>< </span> gaby carmen costales <span> ></span>
-      </h1>
+    <section class="title-row">
+      <PageTitle title="gaby carmen costales" />
       <span class="subtitle">yup, my initials are a compiler</span>
     </section>
 
@@ -18,7 +15,7 @@
         I currently work for <a target="_blank" href="https://myresman.com/">ResMan</a>.
       </p>
       <p class="cta">
-        I plan to add more to this site soon, but in the meantime check out my CV and some other <NuxtLink to="/fun">fun</NuxtLink> stuff.
+        I plan to add more to this site soon, but in the meantime check out my <NuxtLink to="/cv">CV</NuxtLink> or some other <NuxtLink to="/fun">fun</NuxtLink> stuff.
       </p>
     </section>
   </div>
@@ -31,22 +28,11 @@
     @include contained-page;
   }
 
-  .title {
+  .title-row {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
-
-    h1.name {
-      text-align: center;
-      font-family: $monsterratFamily;
-      font-size: 45px;
-      letter-spacing: 2px;
-
-      span {
-        color: var(--accent-color);
-      }
-    }
 
     .subtitle {
       display: block;

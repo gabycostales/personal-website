@@ -61,12 +61,16 @@ export default {
       letter-spacing: 2px;
       font-family: $spaceMonoFamily;
       color: var(--accent-color);
+
+      @media (max-width: 400px) {
+        font-size: 21px;
+      }
     }
   }
-  
 
   .company-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-style: italic;
     margin-bottom: 15px;
@@ -91,13 +95,12 @@ export default {
 
     .skill {
       display: block;
-      margin: 0 5px;
+      margin: 5px;
       padding: 7px;
       border-radius: 5px;
       position: relative;
       overflow: hidden;
       font-size: 14px;
-      color: white;
       font-weight: bold;
       z-index: 1;
     

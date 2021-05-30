@@ -50,5 +50,9 @@ export default {
   .theme-color-button {
     margin-right: 15px;
     @include smallToggle;
+
+    @media (max-width: 310px) {
+      margin-right: 10px;
+    }
   }
 </style>

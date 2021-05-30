@@ -36,6 +36,14 @@ $smallToggleSize: 30px;
   flex: 1;
   width: 100%;
   margin: 20px auto 40px;
+
+  @media (max-height: 1000px) {
+    margin-top: 40px;
+  }
+
+  @media (max-height: 850px) {
+    margin-top: 25px;
+  }
 }
 
 @mixin contained-page {
@@ -43,4 +51,8 @@ $smallToggleSize: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 800px) {
+    max-width: 90%;
+  }
 }

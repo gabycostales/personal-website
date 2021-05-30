@@ -1,35 +1,37 @@
 <template>
   <div class="cv-page">
-    <h1 class="page-title">
-      <span>< </span> experience <span> ></span>
-    </h1>
+    <PageTitle title="experience" />
     <section class="education">
-      <div class="section-title">
-        <font-awesome-icon 
-          icon="graduation-cap"
-          class="title-icon"
-        /> 
-        <h2 class="title">education</h2>
-      </div>
-      <div class="education-info">
-        <h3 class="college">University of Miami</h3>
-        <p>Bachelor's Degree, Computer Science</p>
-        <p>Minors: Mathematics and Business Administration</p>
+      <div class="section-content light-mode-bg">
+        <div class="section-title">
+          <font-awesome-icon 
+            icon="graduation-cap"
+            class="title-icon"
+          />
+          <h2 class="title">education</h2>
+        </div>
+        <div class="education-info">
+          <h3 class="college">University of Miami</h3>
+          <p>Bachelor's Degree, Computer Science</p>
+          <p>Minors: Mathematics and Business Administration</p>
+        </div>
       </div>
     </section>
-    <section>
-      <div class="section-title">
-        <font-awesome-icon 
-          icon="mug-hot"
-          class="title-icon"
-        /> 
-        <h2 class="title">work</h2>
+    <section class="experience">
+      <div class="section-content light-mode-bg">
+        <div class="section-title">
+          <font-awesome-icon 
+            icon="mug-hot"
+            class="title-icon"
+          /> 
+          <h2 class="title">work</h2>
+        </div>
+        <JobDescription
+          v-for="(job, i) in jobs"
+          :key="`job-${i}`"
+          v-bind="job"
+        />
       </div>
-      <JobDescription
-        v-for="(job, i) in jobs"
-        :key="`job-${i}`"
-        v-bind="job"
-      />
     </section>
   </div>
 </template>
@@ -79,7 +81,7 @@ export default {
             'Create and maintain documentation and materials including UML artifacts and user workflows.',
             'Design a relational database that will also be used by researchers at the university.',
           ],
-          skills: ['PHP', 'SQL', 'Laravel', 'MVC', 'Relation Database Design', 'jQuery', 'JavaScript'],
+          skills: ['PHP', 'SQL', 'Laravel', 'MVC', 'jQuery', 'JavaScript', 'Relation Database Design'],
         },
         {
           title: 'Web Development Tutor',
@@ -130,19 +132,11 @@ export default {
     @include page;
     @include contained-page;
 
-    .page-title {
-      text-align: center;
-      font-size: 45px;
-      letter-spacing: 2px;
-      margin-bottom: 40px;
-
-      span {
-        color: var(--accent-color);
-      }
-    }
-
     section {
-      margin-bottom: 40px;
+      .section-content {
+        padding: 20px;
+        margin: -20px;
+      }
 
       .section-title {
         display: flex;
@@ -164,12 +158,29 @@ export default {
     }
   }
 
+  .education {
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    @media (max-width: 800px) {
+      margin-top: 70px;
+    }
+
+    @media (max-width: 600px) {
+      margin-top: 40px;
+    }
+  }
+
   .education-info {
     .college {
       font-size: 25px;
       letter-spacing: 2px;
       font-family: $spaceMonoFamily;
       color: var(--accent-color);
+
+      @media (max-width: 400px) {
+        font-size: 21px;
+      }
     }
 
     p {

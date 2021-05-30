@@ -12,6 +12,10 @@
       line-height: 1em;
       font-family: $spaceMonoFamily;
       font-size: 30px;
+
+      @media (max-width: 310px) {
+        font-size: 25px;
+      }
     }
   }
 </style>
