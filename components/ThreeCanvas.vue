@@ -8,6 +8,7 @@
 import {Stage} from '~/assets/js/Stage';
 
 export default {
+  name: 'ThreeCanvas',
   data() {
     return {
       currentMesh: 'd20Mesh',

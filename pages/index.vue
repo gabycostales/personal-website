@@ -8,7 +8,7 @@
       <span class="subtitle">yup, my initials are a compiler</span>
     </section>
 
-    <section class="content">
+    <section class="content light-mode-bg">
       <p class="welcome">
         <b>Hi!</b> Welcome to my website. <span class="wave">👋🏼</span>
       </p>
@@ -28,16 +28,14 @@
 
   .index-page {
     @include page;
-    max-width: 720px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include contained-page;
   }
 
   .title {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
 
     h1.name {
       text-align: center;
@@ -63,7 +61,8 @@
   }
 
   .content {
-    margin-top: 40px;
+    padding: 20px;
+    margin: -20px;
 
     .wave {
       display: inline-block;

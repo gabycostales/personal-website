@@ -40,7 +40,7 @@ export default {
       addCss: false,
       icons: {
         regular: ['faMoon'],
-        solid: ['faMoon', 'faPalette', 'faEnvelope'],
+        solid: ['faMoon', 'faPalette', 'faEnvelope', 'faGraduationCap', 'faMugHot'],
         brands: ['faTwitter', 'faLinkedinIn', 'faGithub'],
       }
     }],

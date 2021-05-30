@@ -37,3 +37,10 @@ $smallToggleSize: 30px;
   width: 100%;
   margin: 20px auto 40px;
 }
+
+@mixin contained-page {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

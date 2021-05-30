@@ -40,7 +40,6 @@ export class Stage {
     this.meshes.push(this.cubeMesh);
     this.scene.add(this.d20Mesh); // default first mesh
 
-    console.log(this.size);
     const {width, height} = this.size;
     const aspectRatio = width / height;
     this.camera = new PerspectiveCamera(75, aspectRatio, 0.1, 100);
@@ -49,14 +48,11 @@ export class Stage {
     this.camera.lookAt(this.d20Mesh.position)
     this.scene.add(this.camera);
 
-    console.log(this.scene);
-
     // Controls
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.enableDamping = true;
 
     // Render Scene
-    console.log(this.renderer);
     this.renderer.render(this.scene, this.camera);
   }
 
