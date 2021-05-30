@@ -26,6 +26,10 @@ export default {
       color: var(--accent-color);
     }
 
+    @media (max-width: 750px) {
+      font-size: 40px;
+    }
+
     @media (max-width: 700px) {
       display: flex;
       justify-content: space-around;

@@ -46,8 +46,8 @@ export default {
         height: this.$el.clientHeight,
       };
     },
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -55,5 +55,15 @@ export default {
     flex: 1;
     max-height: 500px;
     @include boxHighlight;
+
+    @media (max-width: 950px) {
+      max-height: 420px;
+    }
+
+    @media (max-width: 700px) {
+      width: 100%;
+      max-height: 100%;
+      min-height: 500px;
+    }
   }
 </style>

@@ -38,6 +38,7 @@
 
 <script>
 export default {
+  name: 'Cv',
   data() {
     return {
       jobs: [

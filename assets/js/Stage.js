@@ -81,7 +81,7 @@ export class Stage {
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(width, height);
     // Reset pixel ratio in case they moved to a different screen
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   }
 
   updateMaterialColor(color) {
