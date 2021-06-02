@@ -53,7 +53,7 @@ export default {
             'Working in an Agile environment to develop new features to both existing and new products using a Meteor.js (a Node.js framework) backend with a Vue.js frontend',
             'Mentoring and developing junior developers'
           ],
-          skills: ['Node.js', 'JavaScript', 'ES6', 'MongoDM', 'Meteor.js', 'Vue.js', 'GraphQL', 'JIRA', 'Webpack', 'Sass', 'AWS Lambda', 'Google Cloud solutions']
+          skills: ['Node.js', 'JavaScript', 'ES6', 'MongoDB', 'Meteor.js', 'Vue.js', 'GraphQL', 'JIRA', 'Webpack', 'Sass', 'AWS Lambda', 'Google Cloud solutions']
         },
         {
           title: 'Web Developer',
