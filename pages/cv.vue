@@ -44,14 +44,16 @@ export default {
       jobs: [
         {
           title: 'Software Developer II',
-          company: 'ResMan Property Management',
+          company: 'ResMan Property Management Software',
           startDate: 'January 2020',
           endDate: 'Present',
           about: [
+            'Joined ResMan when they acquired Razz Interactive',
             'Building automation to convert pre-existing websites into fully functional responsive web apps',
-            'Working with a team of developers in an Agile environment to add new features to both existing and new products using Meteor/Vue.js/Node'
+            'Working in an Agile environment to develop new features to both existing and new products using a Meteor.js (a Node.js framework) backend with a Vue.js frontend',
+            'Mentoring and developing junior developers'
           ],
-          skills: ['JavaScript', 'Mongo', 'Meteor.js', 'Vue.js', 'JIRA']
+          skills: ['Node.js', 'JavaScript', 'ES6', 'MongoDM', 'Meteor.js', 'Vue.js', 'GraphQL', 'JIRA', 'Webpack', 'Sass', 'AWS Lambda', 'Google Cloud solutions']
         },
         {
           title: 'Web Developer',
@@ -67,7 +69,7 @@ export default {
             'Build custom Wordpress websites/themes for clients with a Vue frontend.',
             'Write technical documentation.'
           ],
-          skills: ['PHP', 'SQL', 'WordPress', 'JavaScript', 'Mongo', 'Meteor.js', 'Vue.js', 'Asana']
+          skills: ['Node.js', 'JavaScript', 'ES6', 'MongoDB', 'Meteor.js', 'Vue.js', 'Asana', 'PHP', 'SQL', 'WordPress', 'Webpack', 'Sass']
         },
         {
           title: 'Web Developer',
