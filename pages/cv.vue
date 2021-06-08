@@ -49,11 +49,13 @@ export default {
           endDate: 'Present',
           about: [
             'Joined ResMan when they acquired Razz Interactive',
-            'Building automation to convert pre-existing websites into fully functional responsive web apps',
-            'Working in an Agile environment to develop new features to both existing and new products using a Meteor.js (a Node.js framework) backend with a Vue.js frontend',
-            'Mentoring and developing junior developers'
+            'Building automation to convert pre-existing websites into fully functional responsive web apps on the company\'s custom CMS product.',
+            'Working in an Agile environment to develop clean and performant code across our full stack (Meteor.js + Node.js, Vue.js)',
+            'Mentoring and developing junior developers and participate in code reviews',
+            'Lead discussions on technical topics for the rest of the development team to learn from',
+            'An active member of sprint refinement meetings where we work on breaking down larger epics into user smaller stories and estimate how long each story will take.'
           ],
-          skills: ['Node.js', 'JavaScript', 'ES6', 'MongoDB', 'Meteor.js', 'Vue.js', 'GraphQL', 'JIRA', 'Webpack', 'Sass', 'AWS Lambda', 'Google Cloud solutions']
+          skills: ['Node.js', 'JavaScript', 'ES6', 'MongoDB', 'Meteor.js', 'Vue.js', 'Vuex', 'GraphQL', 'JIRA', 'Webpack', 'Sass', 'AWS Lambda', 'Google Cloud solutions']
         },
         {
           title: 'Web Developer',
@@ -69,7 +71,7 @@ export default {
             'Build custom Wordpress websites/themes for clients with a Vue frontend.',
             'Write technical documentation.'
           ],
-          skills: ['Node.js', 'JavaScript', 'ES6', 'MongoDB', 'Meteor.js', 'Vue.js', 'Asana', 'PHP', 'SQL', 'WordPress', 'Webpack', 'Sass']
+          skills: ['Node.js', 'JavaScript', 'ES6', 'HTML', 'CSS', 'MongoDB', 'Meteor.js', 'Vue.js', 'Asana', 'PHP', 'SQL', 'WordPress', 'Webpack', 'Sass']
         },
         {
           title: 'Web Developer',
