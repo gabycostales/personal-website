@@ -39,6 +39,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/google-analytics',
     '@nuxtjs/style-resources',
     ['@nuxtjs/fontawesome', {
       addCss: false,
@@ -70,5 +71,10 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ['three/examples/jsm/controls/OrbitControls.js']
-  }
+  },
+
+  // Google Analytics Options
+  googleAnalytics: {
+    id: 'UA-199215367-1'
+  },
 }

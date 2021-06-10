@@ -23,7 +23,7 @@
     "three": "^0.128.0"
   },
   "devDependencies": {
-    
+    "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/vercel-builder": "^0.21.2",
     "fibers": "^5.0.0",
     "node-sass": "^6.0.0",
