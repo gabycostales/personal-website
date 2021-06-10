@@ -43,7 +43,7 @@ export default {
     return {
       jobs: [
         {
-          title: 'Software Developer II',
+          title: 'Software Developer 2',
           company: 'ResMan Property Management Software',
           startDate: 'January 2020',
           endDate: 'Present',
