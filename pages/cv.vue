@@ -4,7 +4,7 @@
     <section class="education">
       <div class="section-content light-mode-bg">
         <div class="section-title">
-          <font-awesome-icon 
+          <font-awesome-icon
             icon="graduation-cap"
             class="title-icon"
           />
@@ -20,10 +20,10 @@
     <section class="experience">
       <div class="section-content light-mode-bg">
         <div class="section-title">
-          <font-awesome-icon 
+          <font-awesome-icon
             icon="mug-hot"
             class="title-icon"
-          /> 
+          />
           <h2 class="title">work</h2>
         </div>
         <JobDescription
@@ -43,10 +43,17 @@ export default {
     return {
       jobs: [
         {
+          title: 'Senior Software Engineer',
+          company: 'Swarm Solutions',
+          startDate: 'July 2021',
+          endDate: 'Present',
+          skills: ['Node.js', 'TypeScript', 'React', 'AWS', 'Nest.js', 'Jest']
+        },
+        {
           title: 'Software Developer 2',
           company: 'ResMan Property Management Software',
           startDate: 'January 2020',
-          endDate: 'Present',
+          endDate: 'July 2021',
           about: [
             'Joined ResMan when they acquired Razz Interactive',
             'Building automation to convert pre-existing websites into fully functional responsive web apps on the company\'s custom CMS product.',
@@ -145,7 +152,7 @@ export default {
         display: flex;
         align-items: baseline;
         margin-bottom: 20px;
-        
+
         .title {
           font-size: 32px;
           line-height: 1em;

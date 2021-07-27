@@ -12,7 +12,7 @@
       <p class="short-bio">
         I’m a software / full stack developer born and raised in Miami, FL 🌴.
         Coding is my craft and I love building things that are useful to other people with emerging web technologies. <br>
-        I currently work for <a target="_blank" href="https://myresman.com/">ResMan</a>.
+        I currently work for <a target="_blank" href="https://www.swarmsolutions.com/">Swarm Solutions</a>.
       </p>
       <p class="cta">
         I plan to add more to this site soon, but in the meantime check out my <NuxtLink to="/cv">CV</NuxtLink> or some other <NuxtLink to="/fun">fun</NuxtLink> stuff.
