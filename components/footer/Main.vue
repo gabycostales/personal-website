@@ -11,7 +11,7 @@
         target="_blank"
         class="social-link"
       >
-        <font-awesome-icon 
+        <font-awesome-icon
           :icon="social.icon"
           class="social-link-icon"
         />
@@ -25,10 +25,6 @@ export default {
   data() {
     return {
       socialLinks: [
-        {
-          icon: ['fab', 'twitter'],
-          link: 'https://twitter.com/gabycostales/'
-        },
         {
           icon: ['fab', 'linkedin-in'],
           link: 'https://www.linkedin.com/in/gabrielacostales/',
