@@ -55,11 +55,11 @@ export default {
           startDate: 'January 2020',
           endDate: 'July 2021',
           about: [
-            'Joined ResMan when they acquired Razz Interactive',
+            'Joined ResMan when they acquired Razz Interactive.',
             'Building automation to convert pre-existing websites into fully functional responsive web apps on the company\'s custom CMS product.',
-            'Working in an Agile environment to develop clean and performant code across our full stack (Meteor.js + Node.js, Vue.js)',
-            'Mentoring and developing junior developers and participate in code reviews',
-            'Lead discussions on technical topics for the rest of the development team to learn from',
+            'Working in an Agile environment to develop clean and performant code across our full stack (Meteor.js + Node.js, Vue.js).',
+            'Mentor and develop junior developers, participate in code reviews.',
+            'Lead discussions on technical topics for the rest of the development team to learn from.',
             'An active member of sprint refinement meetings where we work on breaking down larger epics into user smaller stories and estimate how long each story will take.'
           ],
           skills: ['Node.js', 'JavaScript', 'ES6', 'MongoDB', 'Meteor.js', 'Vue.js', 'Vuex', 'GraphQL', 'JIRA', 'Webpack', 'Sass', 'AWS Lambda', 'Google Cloud solutions']
@@ -101,7 +101,7 @@ export default {
           endDate: 'December 2015',
           about: [
             'Taught front-end web development fundamentals, UI frameworks, and tools.',
-            'Helped graduate students in the Interactive Media program troubleshoot/debug their web development projects',
+            'Helped graduate students in the Interactive Media program troubleshoot/debug their web development projects.',
           ],
         },
         {

@@ -10,7 +10,7 @@
         <b>Hi!</b> Welcome to my website. <span class="wave">👋🏼</span>
       </p>
       <p class="short-bio">
-        I’m a software / full stack developer born and raised in Miami, FL 🌴.
+        I’m a senior software engineer born and raised in Miami, FL 🌴.
         Coding is my craft and I love building things that are useful to other people with emerging web technologies. <br>
         I currently work for <a target="_blank" href="https://www.swarmsolutions.com/">Swarm Solutions</a>.
       </p>
