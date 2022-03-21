@@ -8,7 +8,6 @@ Here are some things I want to do / add to this site:
 
 - [ ] Add lightbox module to show a gallery of some of my projects described on the CV page
 - [ ] Page to describe tech used on this website build
-- [ ] Also build same site with React + Next.js? To learn React
 - [ ] More Three.js renderings!
 
 ## Build Setup
