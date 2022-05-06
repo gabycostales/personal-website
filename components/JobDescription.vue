@@ -5,19 +5,10 @@
     </div>
     <div class="company-row">
       <p class="company">{{ company }}</p>
-      <p class="time-range">
-        {{ startDate }} - {{ endDate }}
-      </p>
+      <p class="time-range">{{ startDate }} - {{ endDate }}</p>
     </div>
-    <div
-      v-if="skills && skills.length" 
-      class="skills"
-    >
-      <div
-        v-for="skill in skills"
-        :key="skill"
-        class="skill"
-      >
+    <div v-if="skills && skills.length" class="skills">
+      <div v-for="skill in skills" :key="skill" class="skill">
         <span>{{ skill }}</span>
         <div class="skill-bg" />
       </div>
@@ -31,24 +22,23 @@
 </template>
 
 <script>
-export default {
-  name: 'JobDescription',
-  props: {
-    title: String,
-    company: String,
-    startDate: String,
-    endDate: String,
-    about: Array,
-    skills: {
-      type: Array,
-      default: () => [],
+  export default {
+    name: 'JobDescription',
+    props: {
+      title: String,
+      company: String,
+      startDate: String,
+      endDate: String,
+      about: Array,
+      skills: {
+        type: Array,
+        default: () => [],
+      },
     },
-  },
-};
+  };
 </script>
 
 <style lang="scss" scoped>
-
   .job-description {
     margin-bottom: 40px;
   }
@@ -103,8 +93,10 @@ export default {
       font-size: 14px;
       font-weight: bold;
       z-index: 1;
-    
-      &:first-child {margin-left: 0;}
+
+      &:first-child {
+        margin-left: 0;
+      }
 
       .skill-bg {
         position: absolute;
@@ -118,5 +110,4 @@ export default {
       }
     }
   }
-
 </style>

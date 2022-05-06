@@ -1,14 +1,14 @@
 <template>
-  <button 
+  <button
     class="theme-color-button"
     title="Change Theme Accent Color"
-    :class="{'light-mode': isLightMode}"
+    :class="{ 'light-mode': isLightMode }"
     @click="changeAccentColor"
   >
     <font-awesome-icon
       icon="palette"
       class="palette-icon"
-      :style='{color: themeColors[currentColorIndex]}'
+      :style="{ color: themeColors[currentColorIndex] }"
     />
   </button>
 </template>
@@ -25,7 +25,7 @@ export default {
         '#9f7aea', // green
         '#ed64a6', // pink
       ],
-    }
+    };
   },
   mounted() {
     this.$events.on('toggledColorMode', (isLightMode) => {
@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     changeAccentColor() {
-      let {currentColorIndex = 0, themeColors = []} = this;
+      let { currentColorIndex = 0, themeColors = [] } = this;
 
       currentColorIndex += 1;
       if (currentColorIndex >= themeColors.length) {
@@ -54,16 +54,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .theme-color-button {
-    margin-right: 15px;
-    @include smallToggle;
+.theme-color-button {
+  margin-right: 15px;
+  @include smallToggle;
 
-    &.light-mode {
-      background-color: transparent;
-    }
-
-    @media (max-width: 310px) {
-      margin-right: 10px;
-    }
+  &.light-mode {
+    background-color: transparent;
   }
+
+  @media (max-width: 310px) {
+    margin-right: 10px;
+  }
+}
 </style>

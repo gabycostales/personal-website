@@ -1,7 +1,7 @@
 <template>
-  <button 
+  <button
     class="color-mode-toggle"
-    :class="{'light-mode': lightMode}"
+    :class="{ 'light-mode': lightMode }"
     title="Toggle Color Mode"
     @click="toggleColorMode"
   >
@@ -21,24 +21,24 @@ export default {
       const prefix = this.lightMode ? 'far' : 'fa';
 
       return [prefix, 'moon'];
-    }
+    },
   },
   methods: {
     toggleColorMode() {
       this.lightMode = !this.lightMode;
       document.documentElement.classList.toggle('light-mode');
       this.$events.emit('toggledColorMode', this.lightMode);
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-  .color-mode-toggle {
-    @include smallToggle;
-   
-    &.light-mode {
-      color: white;
-    }
+.color-mode-toggle {
+  @include smallToggle;
+
+  &.light-mode {
+    color: white;
   }
+}
 </style>

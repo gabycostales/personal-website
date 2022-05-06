@@ -1,26 +1,41 @@
 <template>
   <section class="bio-section content light-mode-bg">
     <p>
-      When I’m not <a @click.prevent="changeMesh('cubeMesh')">coding</a>, I’m probably hanging out with my dog, playing <a @click.prevent="changeMesh('d20Mesh')">D&D</a> with my friends , or drinking an IPA at a brewery. 🍻
+      When I'm not <a @click.prevent="changeMesh('cubeMesh')">coding</a>, I'm
+      probably hanging out with my dog, playing
+      <a @click.prevent="changeMesh('d20Mesh')">D&D</a> with my friends , or
+      drinking an IPA at a brewery. 🍻
     </p>
     <p>
-      Here’s a sample of my <a target="_blank" href="https://open.spotify.com/playlist/7tTmN5OZ372xOoi5vZeUWl?si=045823b437ae46ca">music</a> taste. 👩🏼‍🎤
+      Here's a sample of my
+      <BasicLink
+        text="music"
+        href="https://open.spotify.com/playlist/7tTmN5OZ372xOoi5vZeUWl?si=045823b437ae46ca"
+      />
+      taste. 👩🏼‍🎤
     </p>
     <p>
-      My all time favorite video games are: The Last of Us (Part 1 & 2), Legend of Zelda: The Wind Waker / Breath of the Wild, Fallout 3, Gone Home, and this incredibly strange game that I had to do a project on in college narrated by Leonard Nemoy called <a target="_blank" href="https://en.wikipedia.org/wiki/Seaman_(video_game)">Seaman</a>. 🤷🏻‍♀️
+      My all time favorite video games are: The Last of Us (Part 1 & 2), Legend
+      of Zelda: The Wind Waker / Breath of the Wild, Fallout 3, Gone Home, and
+      this incredibly strange game that I had to do a project on in college
+      narrated by Leonard Nemoy called
+      <BasicLink
+        text="Seaman"
+        href="https://en.wikipedia.org/wiki/Seaman_(video_game)"
+      />. 🤷🏻‍♀️
     </p>
   </section>
 </template>
 
 <script>
-export default {
-  name: 'BioSection',
-  methods: {
-    changeMesh(mesh) {
-      this.$emit('changeMesh', mesh);
+  export default {
+    name: 'BioSection',
+    methods: {
+      changeMesh(mesh) {
+        this.$emit('changeMesh', mesh);
+      },
     },
-  },
-};
+  };
 </script>
 
 <style lang="scss" scoped>
@@ -30,7 +45,7 @@ export default {
     width: 50%;
 
     @media (max-width: 950px) {
-      width: 55%
+      width: 55%;
     }
 
     @media (max-width: 700px) {
@@ -42,8 +57,12 @@ export default {
       line-height: 1.5em;
       margin: 20px 0;
 
-      &:first-child { margin-top: 0; }
-      &:last-child { margin-bottom: 0; }
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       @media (max-width: 950px) {
         font-size: 20px;

@@ -4,19 +4,19 @@
       <LazyThreeCanvas />
     </client-only>
     <span class="caption">
-      I'm also just starting to learn Three.js! Click on the links in my bio to see different meshes.
+      I'm also just starting to learn Three.js! Click on the links in my bio to
+      see different meshes.
     </span>
   </section>
 </template>
 
 <script>
-export default {
-  name: 'CanvasSection',
-};
+  export default {
+    name: 'CanvasSection',
+  };
 </script>
 
 <style lang="scss" scoped>
-
   .fun-canvas {
     width: 45%;
     height: 100%;
@@ -41,5 +41,4 @@ export default {
       width: 85%;
     }
   }
-
 </style>

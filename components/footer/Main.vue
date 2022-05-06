@@ -11,40 +11,36 @@
         target="_blank"
         class="social-link"
       >
-        <font-awesome-icon
-          :icon="social.icon"
-          class="social-link-icon"
-        />
+        <font-awesome-icon :icon="social.icon" class="social-link-icon" />
       </a>
     </div>
   </footer>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      socialLinks: [
-        {
-          icon: ['fab', 'linkedin-in'],
-          link: 'https://www.linkedin.com/in/gabrielacostales/',
-        },
-        {
-          icon: ['fab', 'github'],
-          link: 'https://github.com/gabycostales',
-        },
-         {
-          icon: ['fa', 'envelope'],
-          link: 'mailto:gabycostales@gmail.com',
-        },
-      ],
-    };
-  },
-};
+  export default {
+    data() {
+      return {
+        socialLinks: [
+          {
+            icon: ['fab', 'linkedin-in'],
+            link: 'https://www.linkedin.com/in/gabrielacostales/',
+          },
+          {
+            icon: ['fab', 'github'],
+            link: 'https://github.com/gabycostales',
+          },
+          {
+            icon: ['fa', 'envelope'],
+            link: 'mailto:gabycostales@gmail.com',
+          },
+        ],
+      };
+    },
+  };
 </script>
 
 <style lang="scss" scoped>
-
   footer {
     display: flex;
     justify-content: space-between;
@@ -91,5 +87,4 @@ export default {
       }
     }
   }
-
 </style>

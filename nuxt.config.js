@@ -3,35 +3,34 @@ export default {
   head: {
     title: 'Gaby Costales',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { 
+      {
         hid: 'description',
         name: 'description',
-        content: 'Software / full stack developer born and raised in Miami, FL.'
-      }
+        content:
+          'Software / full stack developer born and raised in Miami, FL.',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&family=Space+Mono:ital@0;1&display=swap',
-      }
-    ]
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/scss/main.scss'
-  ],
+  css: ['@/assets/scss/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: '~/plugins/events.js', mode: 'client'},
-    {src: '~/plugins/viewport.js', mode: 'client'},
+    { src: '~/plugins/events.js', mode: 'client' },
+    { src: '~/plugins/viewport.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -41,40 +40,49 @@ export default {
   buildModules: [
     '@nuxtjs/google-analytics',
     '@nuxtjs/style-resources',
-    ['@nuxtjs/fontawesome', {
-      addCss: false,
-      icons: {
-        regular: ['faMoon'],
-        solid: ['faMoon', 'faPalette', 'faEnvelope', 'faGraduationCap', 'faMugHot'],
-        brands: ['faTwitter', 'faLinkedinIn', 'faGithub'],
-      }
-    }],
+    [
+      '@nuxtjs/fontawesome',
+      {
+        addCss: false,
+        icons: {
+          regular: ['faMoon'],
+          solid: [
+            'faMoon',
+            'faPalette',
+            'faEnvelope',
+            'faGraduationCap',
+            'faMugHot',
+          ],
+          brands: ['faTwitter', 'faLinkedinIn', 'faGithub'],
+        },
+      },
+    ],
   ],
 
   // Style Resources
   styleResources: {
-    scss: [
-      '~/assets/scss/_variables.scss',
-      '~/assets/scss/_mixins.scss',
-    ],
+    scss: ['~/assets/scss/_variables.scss', '~/assets/scss/_mixins.scss'],
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    ['@nuxtjs/robots', {
-      UserAgent: '*',
-      Allow: '/'
-    }],
-    '@nuxtjs/sitemap'
+    [
+      '@nuxtjs/robots',
+      {
+        UserAgent: '*',
+        Allow: '/',
+      },
+    ],
+    '@nuxtjs/sitemap',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ['three/examples/jsm/controls/OrbitControls.js']
+    transpile: ['three/examples/jsm/controls/OrbitControls.js'],
   },
 
   // Google Analytics Options
   googleAnalytics: {
-    id: 'UA-199215367-1'
+    id: 'UA-199215367-1',
   },
-}
+};
