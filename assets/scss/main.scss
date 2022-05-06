@@ -15,7 +15,7 @@
 }
 
 :root.light-mode {
-  --bg-color: #{$light};
+  --bg-color: #{$lightgray};
   --font-color: black;
 }
 
@@ -33,7 +33,7 @@ html {
   &.light-mode {
     .light-mode-bg {
       border-radius: 5px;
-      background-color: $lightgray;
+      background-color: $light;
     }
   }
 }
