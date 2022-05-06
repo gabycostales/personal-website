@@ -1,6 +1,6 @@
-# Gaby's Website
+# My Website
 
-This is my first forray into Nuxt, so judge lightly!
+This is my first forray into Nuxt 🪄
 
 ## Future Roadmap
 
@@ -26,5 +26,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-This is a Nuxt project!
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

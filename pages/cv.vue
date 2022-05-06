@@ -47,7 +47,13 @@ export default {
           company: 'Swarm Solutions',
           startDate: 'July 2021',
           endDate: 'Present',
-          skills: ['Node.js', 'TypeScript', 'React', 'AWS', 'Nest.js', 'Jest']
+          skills: ['JavaScript', 'TypeScript', 'Node.js', 'React.js', 'Nest.js', 'AWS', 'Jest', 'PostgreSQL', 'Redis', 'JIRA'],
+          about: [
+            'Develop software applications using best practices in coordination with a distributed team.',
+            'Architect complex software features and functionality in a maintainable, DRY, abstract, and modular way.',
+            'Demonstrate expert understanding of server-side and client-side JavaScript and asynchronous JavaScript code.',
+            'Augment engineering teams and not only deliver quality code, but also demonstrate engineering leadership by being an effective communicator and improving engineering processes.'
+          ]
         },
         {
           title: 'Software Developer 2',
@@ -56,11 +62,12 @@ export default {
           endDate: 'July 2021',
           about: [
             'Joined ResMan when they acquired Razz Interactive.',
-            'Building automation to convert pre-existing websites into fully functional responsive web apps on the company\'s custom CMS product.',
-            'Working in an Agile environment to develop clean and performant code across our full stack (Meteor.js + Node.js, Vue.js).',
-            'Mentor and develop junior developers, participate in code reviews.',
-            'Lead discussions on technical topics for the rest of the development team to learn from.',
-            'An active member of sprint refinement meetings where we work on breaking down larger epics into user smaller stories and estimate how long each story will take.'
+            'Developed a custom CMS platform for building marketing websites for real estate and property management professionals.',
+            'Built automation to scrape, scan, and convert pre-existing websites into fully functional responsive web apps on the company\'s custom CMS product using Google Cloud APIs.',
+            'Worked with designers to build UI/UX for editing responsive websites and components that was both robust enough to allow for deep customization and still easy to use.',
+            'Mentored and developed junior developers. Participated in code reviews.',
+            'Lead discussions and demos on technical topics for the rest of the development team to learn from.',
+            'Actively participated in agile ceremonies and sprint refinement meetings where we work on breaking down larger epics into user smaller stories and estimate how long each story will take.'
           ],
           skills: ['Node.js', 'JavaScript', 'ES6', 'MongoDB', 'Meteor.js', 'Vue.js', 'Vuex', 'GraphQL', 'JIRA', 'Webpack', 'Sass', 'AWS Lambda', 'Google Cloud solutions']
         },
@@ -70,7 +77,7 @@ export default {
           startDate: 'June 2018',
           endDate: 'January 2020',
           about: [
-            'Full-stack developer implementing both client and server-side logic for all projects including a new content management system to create and manage marketing websites.',
+            'Full stack developer implementing both client and server-side logic for all projects including a new content management system to create and manage marketing websites.',
             'Code, test, and maintain corporate websites, web applications, and digital experiences with innovative custom designs.',
             'Translate design mockups into dynamic, optimized, cross-browser compatible, and responsive website templates or reusable components that conform to web accessibility standards and best practices.',
             'Analyze user needs and technical software requirements to determine feasibility of designs within time and cost constraints.',
@@ -92,7 +99,7 @@ export default {
             'Create and maintain documentation and materials including UML artifacts and user workflows.',
             'Design a relational database that will also be used by researchers at the university.',
           ],
-          skills: ['PHP', 'SQL', 'Laravel', 'MVC', 'jQuery', 'JavaScript', 'Relation Database Design'],
+          skills: ['PHP', 'SQL', 'Laravel', 'MVC', 'jQuery', 'JavaScript', 'Relational Database Design'],
         },
         {
           title: 'Web Development Tutor',
