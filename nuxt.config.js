@@ -11,8 +11,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content:
-          'Software / full stack developer born and raised in Miami, FL.',
+        content: 'Software engineer born and raised in Miami, FL.',
       },
     ],
     link: [
