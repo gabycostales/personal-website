@@ -1,6 +1,6 @@
 This is my personal website built with Nuxt.js and Vue!
 
-**_NOTE_**: I'm archiving this version of the website, and now maintain a version built with Next.js and React instead. 
+**_NOTE_**: I'm archiving this version of the website, instead I now maintain a version built with Next.js and React. 
 https://github.com/gabycostales/personal-website-next
 
 ## Build Setup
